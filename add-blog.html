@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Add Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Add a Blog</h1>
-  <form name="blog" netlify>
-    <p><input type="text" name="title" placeholder="Blog Title" required></p>
-    <p><textarea name="content" placeholder="Write your blog..." required></textarea></p>
-    <p><button type="submit">Submit</button></p>
+  <h1>Add a New Blog</h1>
+  <form id="blogForm">
+    <input type="text" id="title" placeholder="Blog Title" required><br><br>
+    <textarea id="content" placeholder="Write your blog here..." required></textarea><br><br>
+    <button type="submit">Submit Blog</button>
   </form>
-  <a href="index.html">← Back to blogs</a>
+  <a href="index.html">← Back</a>
+
+  <script type="module" src="add-blog.js"></script>
 </body>
 </html>
