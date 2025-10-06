@@ -7,13 +7,17 @@
 </head>
 <body>
   <h1>Add a New Blog</h1>
-  <form id="blogForm">
-    <input type="text" id="title" placeholder="Blog Title" required><br><br>
-    <textarea id="content" placeholder="Write your blog here..." required></textarea><br><br>
-    <button type="submit">Submit Blog</button>
+
+  <!-- ✅ Netlify Form setup -->
+  <form name="blog" method="POST" data-netlify="true">
+    <input type="text" name="title" placeholder="Blog Title" required><br><br>
+    <textarea name="content" placeholder="Write your blog here..." required></textarea><br><br>
+    <button type="submit">Submit</button>
   </form>
+
   <a href="index.html">← Back</a>
 
-  <script type="module" src="add-blog.js"></script>
+  <!-- Optional success message -->
+  <div data-netlify="true" hidden></div>
 </body>
 </html>
